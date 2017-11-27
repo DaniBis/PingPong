@@ -1,0 +1,27 @@
+
+tr{
+  height: 50px;
+}
+
+.score_table {
+  width: 90%;
+  height: 200px;
+  background-color: #0E2D3D;
+  margin: 0 auto;
+}
+
+.score_table table{
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.score_table table tr:first-child{
+  border-bottom: 1px solid white;
+}
+
+.score_table table tr:first-child th{
+  width: 1%;
+  color: white;
+  text-align: center;
+}

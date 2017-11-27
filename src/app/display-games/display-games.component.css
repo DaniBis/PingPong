@@ -1,0 +1,34 @@
+.displaygames {
+  width: 100%;
+  height: 200px;
+  margin-left: 35px;
+  margin-top: 30px;
+  background-color: #0E2D3D;
+}
+
+.displaygames h2{
+  color: white;
+  text-align: center;
+}
+
+.displaygames h4{
+  color: white;
+  text-align: center;
+}
+
+.displaygames p{
+  color: white;
+  text-align: center;
+}
+
+.displaygames button {
+  margin: 0 auto;
+  display: grid;
+  width: 50%;
+  margin-top: 20px;
+  color: black;
+}
+
+.displaygameshistory{
+  display: inline;
+}
