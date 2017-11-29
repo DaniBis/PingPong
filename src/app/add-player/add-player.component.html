@@ -1,8 +1,8 @@
 <div class="addplayer">
-      <form action="myController.js">
+      <form (submit)="submitName()">
         <h2>Add a new player</h2>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="e.g. Jimbo">
+          <input type="text" class="form-control" placeholder="e.g. Jimbo" [(ngModel)]="playerName">
         </div>
         <button type="submit" class="btn btn-default">Add Player</button>
       </form>
