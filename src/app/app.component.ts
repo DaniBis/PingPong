@@ -15,4 +15,7 @@ export class AppComponent {
     		this.results = event;
         console.log(this.results + "on the parents");
     	}
+      onLoadEmitted(event) {
+		    this.isLoading = false;
+	     }
 }

@@ -7,13 +7,14 @@ import { AddPlayerComponent } from './../add-player/add-player.component';
   styleUrls: ['./add-games.component.css']
 })
 export class AddGamesComponent implements OnChanges, AfterViewInit{
-
+_whatShouldBe : string [];
 @Input("results") results: string[];
-
+@Input("isLoading") isLoading = true;
+_whatShouldBe = this.results;
 ngOnChanges() {
-
+console.log(this._whatShouldBe + " another change");
 	}
 ngAfterViewInit() {
-  console.log(this.canbe +"we changed");
+  console.log(this.results + "I'm now in add games");
 	}
 }
