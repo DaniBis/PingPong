@@ -7,7 +7,7 @@
   </header>
 <app-score-table></app-score-table>
 <div class="DisplayDivs">
-<app-add-player></app-add-player>
-<app-add-games></app-add-games>
+<app-add-player (ResultsEmitted)="onResultsEmitted($event)"></app-add-player>
+<app-add-games [results]="results" ></app-add-games>
 <app-display-games></app-display-games>
 </div>

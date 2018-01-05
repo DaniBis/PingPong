@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnChanges, AfterViewInit } from '@angular/core';
+import { AddPlayerComponent } from './../add-player/add-player.component';
 
 @Component({
   selector: 'app-add-games',
   templateUrl: './add-games.component.html',
   styleUrls: ['./add-games.component.css']
 })
-export class AddGamesComponent implements OnInit {
+export class AddGamesComponent implements OnChanges, AfterViewInit{
 
-  constructor() { }
+@Input("results") results: string[];
 
-  ngOnInit() {
-  }
+ngOnChanges() {
 
+	}
+ngAfterViewInit() {
+  console.log(this.canbe +"we changed");
+	}
 }

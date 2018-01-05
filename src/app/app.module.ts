@@ -17,7 +17,7 @@ import { AlertModule } from 'ngx-bootstrap';
     ScoreTableComponent,
     AddPlayerComponent,
     AddGamesComponent,
-    DisplayGamesComponent
+    DisplayGamesComponent,
   ],
   imports: [
     BrowserModule,

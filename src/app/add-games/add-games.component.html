@@ -3,12 +3,11 @@
         <h2>Add Games</h2>
 
       <div class="form-group">
-        <select class="form-control" id="sel1">
-          <option value="" disabled selected>Please select...</option>
-          <option value="submitName()"></option>
+        <select [(ngModel)]="_playerName" class="form-control">
+        <option *ngFor="let name of listOfNames" [ngValue]="name">Please select...{{name}}}</option>
         </select>
         <h3>vs</h3>
-        <select class="form-control" id="sel1">
+        <select class="form-control" id="player">
           <option value="" disabled selected>Please select...</option>
           <option value="submitName()"></option>
         </select>
