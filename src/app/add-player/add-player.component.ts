@@ -11,7 +11,7 @@ export class AddPlayerComponent{
   nameModel:string = "";
   @Input() listOfNames = [];
 
-  @Output() ResultsEmitted = new EventEmitter<string>();
+  @Output() ResultsEmitted = new EventEmitter<string[]>();
   onSubmit() {
     this.listOfNames.push(this.nameModel)
     this.nameModel = '';

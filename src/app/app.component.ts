@@ -13,7 +13,7 @@ export class AppComponent {
 
     	onResultsEmitted(event) {
     		this.results = event;
-        console.log(this.results + "on the parents");
+        console.log(this.results + " on the parents");
     	}
       onLoadEmitted(event) {
 		    this.isLoading = false;

@@ -6,15 +6,23 @@ import { AddPlayerComponent } from './../add-player/add-player.component';
   templateUrl: './add-games.component.html',
   styleUrls: ['./add-games.component.css']
 })
+
 export class AddGamesComponent implements OnChanges, AfterViewInit{
 _whatShouldBe : string [];
 @Input("results") results: string[];
 @Input("isLoading") isLoading = true;
-_whatShouldBe = this.results;
+loading  = true;
+
 ngOnChanges() {
+this._whatShouldBe = this.results;
 console.log(this._whatShouldBe + " another change");
 	}
+
+getResults() {
+	this.loading = false;
+}
+
 ngAfterViewInit() {
-  console.log(this.results + "I'm now in add games");
+  this.getResults();
 	}
 }
